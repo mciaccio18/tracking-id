@@ -5,15 +5,25 @@
 
     <!-- Public plugin name should be written in Title Case.
          Guidelines: https://plugins.jetbrains.com/docs/marketplace/plugin-overview-page.html#plugin-name -->
-    <name>Add-Tracking-Id</name>
+    <name>Add Tracking Ids</name>
 
     <!-- A displayed Vendor name or Organization ID displayed on the Plugins Page. -->
-    <vendor email="michael.ciaccio@ukg.com" url="https://www.yourcompany.com">UKG</vendor>
+    <vendor email="michael.ciaccio@ukg.com" url="https://www.ukg.com">Michael Ciaccio</vendor>
 
     <!-- Description of the plugin displayed on the Plugin Page and IDE Plugin Manager.
          Simple HTML elements (text formatting, paragraphs, and lists) can be added inside of <![CDATA[ ]]> tag.
          Guidelines: https://plugins.jetbrains.com/docs/marketplace/plugin-overview-page.html#plugin-description -->
-    <description>A plugin to add trackingIds to various xml components</description>
+    <description><![CDATA[
+Plugin to add Tracking Ids to various Xml buttons in support of Pendo Tracking.<br/>
+Currently Supported Xml Tags:
+<ul>
+    <li>button</li>
+    <li>Button</li>
+    <li>Icon Button</li>
+    <li>InlineButton</li>
+    <li>InlineButton2</li>
+</ul>
+]]></description>
 
     <!-- Product and plugin compatibility requirements.
          Read more: https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html -->
@@ -27,7 +37,7 @@
     <actions>
         <action id="com.ukg.customplugin.addtrackingid.TrackingIdAction"
                 class="com.ukg.trackingids.TrackingIdAction" text="Add Tracking Id"
-                description="Add tracking id if its missing">
+                description="Add tracking Id to Xml elements">
             <add-to-group group-id="ToolsMenu" anchor="first"/>
             <keyboard-shortcut keymap="$default" first-keystroke="ctrl alt T" second-keystroke="shift ctrl M"/>
         </action>

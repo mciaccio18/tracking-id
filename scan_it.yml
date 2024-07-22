@@ -1,0 +1,21 @@
+manifest_version: 1.0 
+applications:
+  - app_name: 
+    app_id: 
+    version: 
+    description:
+    pillar:
+    value_stream:
+    customer_facing: 
+    production_deployment: 
+    team_id:
+    owners:
+    ci_pipeline:
+    cd_pipeline:
+    scan:
+      branch:
+      scan_dirs:
+      scan_files:
+      exclude_dirs:
+      exclude_files:
+ 
